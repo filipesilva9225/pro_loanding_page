@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* content-box: diminui o elemento para se encaixar ao padding
+        border-box: deixa o elemento do tamanho definido pelo usuario e soma com o padding
+    */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background-color: #000;
+  /* desabilita o scroll no eixo X */
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #000;
+  color: #fff;
+  padding: 100px 20px 120px;
+  text-align: center;
+  position: relative;
+}
+
+.gradient-text {
+  background: #69ffa8;
+  background: linear-gradient(
+    321deg,
+    rgba(105, 255, 168, 1) 20%,
+    rgb(52, 89, 255) 80%
+  );
+  background-clip: text;
+  /* quando há própriedades recentes no css, é necessário ultilizar os webkits
+   para não conflitar com plataformas que rodaram os comandos e outras não */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4.5em;
+  font-weight: 900;
+  margin-bottom: 30px;
+  letter-spacing: -2px;
+  line-height: 1.1;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  padding-bottom: 30px;
+  color: #999;
+  font-weight: 300;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.hero-button {
+  display: inline-block;
+  background: linear-gradient(
+    321deg,
+    rgba(105, 255, 240, 1) 0%,
+    rgba(0, 62, 161, 1) 100%
+  );
+  color: #000;
+  padding: 20px 60px;
+  border-radius: 100px;
+  border: none;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.hero-button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  box-shadow: rgba(30, 172, 255, 0.6) 0px 5px 15px;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  background-color: #000;
+  padding: 125px;
+}
+
+.benefits h2 {
+  grid-column: 1 /-1;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 80px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.benefits-card {
+  background: linear-gradient(
+    321deg,
+    rgba(51, 51, 51, 1) 0%,
+    rgba(28, 22, 22, 1) 100%
+  );
+  border: 1px solid #222;
+  border-radius: 30px;
+  padding: 50px 40px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.benefits-card:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(0deg, rgb(0, 134, 136) 0%, rgb(203, 1, 230) 100%);
+  cursor: pointer;
+  box-shadow: rgba(30, 172, 255, 0.6) 0px 5px 15px;
+  inset: -2px;
+}
+
+.benefit-number {
+  font-size: 4em;
+  font-weight: 900;
+  background: linear-gradient(
+    0deg,
+    rgb(47, 252, 255) 0%,
+    rgb(22, 96, 255) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.benefits-card:hover .benefit-number {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+  color: #ffffff;
+}
+
+.benefits-card h3 {
+  font-size: 2em;
+  font-weight: 200;
+  background: linear-gradient(
+    0deg,
+    rgb(229, 34, 255) 0%,
+    rgb(25, 251, 255) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.benefits-card:hover h3 {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+  color: #ffffff;
+}
+
+.benefits-card p {
+  font-size: 1.3em;
+  font-weight: 100;
+  background: linear-gradient(
+    0deg,
+    rgb(229, 34, 255) 0%,
+    rgb(25, 251, 255) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.benefits-card:hover p {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  -webkit-text-fill-color: unset;
+  color: #ffffff;
+}
