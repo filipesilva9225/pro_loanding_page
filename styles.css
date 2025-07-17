@@ -113,7 +113,7 @@ header {
   );
   border: 1px solid #222;
   border-radius: 30px;
-  padding: 50px 40px;
+  padding: 30px 30px;
   position: relative;
   overflow: hidden;
   transition: 0.5s;
@@ -149,6 +149,7 @@ header {
 }
 
 .benefits-card h3 {
+  text-align: center;
   font-size: 2em;
   font-weight: 200;
   background: linear-gradient(
@@ -167,6 +168,7 @@ header {
   background-clip: unset;
   -webkit-text-fill-color: unset;
   color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .benefits-card p {
