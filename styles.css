@@ -94,6 +94,7 @@ header {
 }
 
 .benefits h2 {
+  /* faz a coluna subir 1 */
   grid-column: 1 /-1;
 }
 
@@ -190,4 +191,72 @@ header {
   background-clip: unset;
   -webkit-text-fill-color: unset;
   color: #ffffff;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  background-color: #333;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.features h2 {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.pill {
+  background-color: #111;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 1em;
+  color: white;
+  border-color: #999;
+  padding: 15px;
+  font-weight: 600;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.pill:hover {
+  transform: translateY(-3px);
+  border-color: #00f5ff;
+  color: #00f5ff;
+  box-shadow: rgba(0, 183, 255, 0.6) 0px 5px 15px;
+}
+
+.cta-section {
+  background: linear-gradient(145deg, #111, #1a1a1a);
+  border: 2px solid #222;
+  border-radius: 40px;
+  padding: 80px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin: 120px auto;
+}
+
+.cta-section h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: white;
+  font-weight: 800;
+}
+
+.cta-section p {
+  font-size: 1.1em;
+  margin-bottom: 40px;
+  color: #888;
+}
+
+footer {
+  background-color: #000;
+  color: #666;
+  text-align: center;
+  padding: 60px 0;
+  border-top: 1px solid #222;
 }
